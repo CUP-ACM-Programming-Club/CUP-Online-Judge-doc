@@ -40,7 +40,7 @@
 在为本程序进行开发时请时刻牢记**稳定**与**必要**是该程序功能增改的一大原则。
 
 以下是本程序在用户登录后模块间通信的图示。
-![](/img/program_structure.png)
+![](https://raw.githubusercontent.com/CUP-ACM-Programming-Club/CUP-Online-Judge-doc/master/pic/program_structure.png)
 
 可以分为以下部分。
 ### ~~Node.js Runtime~~基于Node.js Express开发的后端

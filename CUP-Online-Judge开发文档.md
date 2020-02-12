@@ -6,10 +6,33 @@
 
 **CUP Virtual Judge由于国内各大OJ调整对海外IP地址访问的策略，现在暂时停止提交功能，保留题目内容供查询。**
 
+## 云化
+### Datasource
+* MySQL 使用阿里云RDS MySQL服务器
+### Middleware
+* 判题机注册节点 **待开发**
+### Core
+* 前端 已完成
+* 后端 已完成
+* 判题机 待开发
+## 线上已知问题
+
+迁移至[CUP Online Judge系统问题整理复盘](/discuss/thread/17)
+~~* WebSocket进程有CPU hang100%的现象~~
+~~解决方案:排查中~~
+
+~~* 提交事件响应抖动造成冗余提交~~
+~~解决方案: 前端去颤加锁，后端加计时器~~
+
+~~* 发布有较大不确定性，有不可预估的风险~~
+~~解决方案: 新增部署dev环境->ppe环境->prod环境发布链，新发布统一走SOP变更。~~
+
 ## TypeScript改造
 > 动态一时爽，重构火葬场
 
 为了杜绝以上情况的出现，现计划通过改造当前后端，使用TypeScript语言重构。
+
+**注: 使用TypeScript请务必抽象化规范化各种DO,减少不必要的`any`声明**
 
 如果你也对重构计划感兴趣，欢迎访问
 * (后端)[CUP-Online-Judge-Express:typescript](https://github.com/CUP-ACM-Programming-Club/CUP-Online-Judge-Express/tree/typescript)
